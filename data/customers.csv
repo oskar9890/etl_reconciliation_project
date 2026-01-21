@@ -1,0 +1,8 @@
+customer_id,name,email,signup_date,status
+123,John Smith,john.smith@email.com,2023-01-15,active
+124, Sarah Jones ,sarah.jones@email.com,15/02/2023,active
+125,,mike@email.com,2023/03/01,active
+125,Mike Brown,mike@email.com,2023/03/01,active
+,Emma Wilson,emma@email.com,2023-04-10,active
+126,David Lee,david@email,2023-05-20,active
+127,Alice Green,alice@email.com,not_a_date,active
