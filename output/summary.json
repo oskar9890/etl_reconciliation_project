@@ -1,0 +1,6 @@
+{
+  "total_customers": 5,
+  "total_orders": 4,
+  "orders_without_customers": 4,
+  "customers_without_orders": 5
+}

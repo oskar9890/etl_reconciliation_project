@@ -1,5 +1,9 @@
 import pandas as pd
+import json
 import re
+import os
+os.makedirs("output", exist_ok=True)
+
 
 # ----------------------------
 # Constants
@@ -138,7 +142,7 @@ def clean_orders(df: pd.DataFrame) -> pd.DataFrame:
 # ----------------------------
 # RECONCILIATION FUNCTION
 # ----------------------------
-def reconcile_customers_orders(customers_df: pd.DataFrame, orders_df: pd.DataFrame):
+def reconcile_customers_orders(customers_df, orders_df):
     """
     Reconcile customers and orders.
 
@@ -185,3 +189,12 @@ if __name__ == "__main__":
     print(report["summary"])
     print(report["orders_without_customers"].head())
     print(report["customers_without_orders"].head())
+
+    customers_df.to_csv("output/clean_customers.csv", index=False)
+    orders_df.to_csv("output/clean_orders.csv", index=False)
+
+    report["orders_without_customers"].to_csv("output/orders_without_customers.csv", index=False)
+    report["customers_without_orders"].to_csv("output/customers_without_orders.csv", index=False)
+    
+    with open("output/summary.json", "w") as f:
+        json.dump(report["summary"], f, indent=2)

@@ -1,0 +1,6 @@
+customer_id,name,email,signup_date,status,email_valid,signup_date_valid
+123.0,John Smith,john.smith@email.com,2023-01-15,active,True,True
+124.0, Sarah Jones ,sarah.jones@email.com,,active,True,False
+125.0,,mike@email.com,,active,True,False
+126.0,David Lee,david@email,2023-05-20,active,False,True
+127.0,Alice Green,alice@email.com,,active,True,False

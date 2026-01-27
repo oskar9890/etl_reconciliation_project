@@ -1,0 +1,5 @@
+order_id,customer_id,amount,order_date,amount_valid,order_date_valid
+1001,1.0,49.99,2024-01-02,True,True
+1002,2.0,19.99,2024-01-05,True,True
+1004,3.0,,2024-01-08,False,True
+1005,999.0,9.99,2024-01-10,True,True
