@@ -1,0 +1,7 @@
+customer_id,name,email,signup_date,status
+101,John Smith,john.smith@email.com,10/01/2023,active
+102,Sarah Jones,sarah.jones@email.com,15/02/2023,active
+105,Johnny Smith,johnny.smith@email.com,01/03/2023,active
+102,Mike Brown,mike@email.com,20/04/2023,active
+,No ID,noid@email.com,01/05/2023,active
+106,Bad Email,bad-email,not-a-date,active
